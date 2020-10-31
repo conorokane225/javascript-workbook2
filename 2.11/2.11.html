@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>
+        workbook 2
+    </title>
+</head>
+<body>
+<!--Question 1: ( null || 2 || undefined );
+    Answer is 2  because 2 is the first true value that is found-->
+
+    <!--Question 2: alert( alert(1) || 2 || alert(3) );
+Answer displays 1 and then 2. not 3 because or only displays first two values
+    -->
+    
+    <!--Question 3: alert( 1 && null && 2 );
+Answer displays null. It displays because the && will always display the negative if present in equation.
+    -->
+
+    <!--Question 4:alert( alert(1) && alert(2) );
+Answer displays 1 and undefined. It displays because && is looking for a true value and stops looking after it finds 1.
+    -->
+    <!--Question 5:
+alert( null || 2 && 3 || 4 );
+Answer displays 3. && gets precedence over || .After not finding a false value in && it chooses last the last value displayed which is 3. After the && has been established the equation reads null||3||4. In an or equation you are looking for the first true value which is the number 3.
+  -->
+<!--Question 6:
+Write an if condition to check that age is between 14 and 90 inclusively.-->
+<script>
+    if (age >= 14 && age <= 90);
+  
+</script>
+<!--Question 7:
+Write an if condition to check that age is NOT between 14 and 90 inclusively.
+-->
+<script>
+    if (!(age >= 14 && age <= 90));
+    if (age <= 14 && age >= 90);
+</script>
+<!--Question 8: -->
+  <script>
+if (-1 || 0) alert( 'first' );
+if (-1 && 0) alert( 'second' );
+if (null || -1 && 1) alert( 'third' );
+</script>
+
+<!-- Answer is first and third are displayed-->
+<!--Question 9: Write code for a login prompt-->
+<script>
+    let userName = prompt("who's there?", '');
+    if (userName === 'Admin') {
+        let pass = prompt ('Password?', '');
+        if (pass === 'The master') {
+            alert ( 'Welcome!' );
+        } else if (pass === '' || pass === null) {
+            alert( 'canceled' );
+        } else {
+            alert( 'Wrong Password' );
+        }
+    } else if (userName === '' || userName === null) {
+        alert( 'canceled' );
+    } else {
+        alret ( "I don't know you" );
+    }
+</script>
+
+</body>
+
+
+</html>
